@@ -18,10 +18,13 @@ public class MedicalSoft {
         // TODO code application logic here
         
         Medico primerMedico =new Medico("Juan","Perez");
-        //primerMedico.nombres="Kleyner";
+        //primerMedico.nombres="Kleyner";        
         System.out.println(primerMedico.getNombres());
-        System.out.println(primerMedico.getApellidos());
-         
+        System.out.println(primerMedico.getApellidos());        
+        primerMedico.setFecha_nacimiento("28/07/1999");
+        primerMedico.setEmail("kleyner@1.com");
+        
+        System.out.println("El medico es "+primerMedico.getFullName()+" y su edad es: "+primerMedico.getEdad());
     }
     
 }
