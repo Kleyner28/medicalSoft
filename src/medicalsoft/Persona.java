@@ -29,7 +29,6 @@ public class Persona {
     private String identificacion;
     private String genero;
     private String direccion;
-    private String email;
     private String telefono;
     private String celular;      
     
@@ -79,14 +78,6 @@ public class Persona {
 
     public void setDireccion(String direccion) {
         this.direccion = direccion;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
     }
 
     public String getTelefono() {

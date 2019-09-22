@@ -14,23 +14,31 @@ import java.util.regex.Pattern;
  */
 public class Validacion {   
     
-    Persona per= new Persona();
+    public static String correo;
+
+    public static String getCorreo() {
+        return correo;
+    }
+
+    public static void setCorreo(String correo) {
+        Validacion.correo = correo;
+    }
     
-    public boolean validarEmail(String email){
-    email =per.getEmail();
+    public static String validarEmail(){           
+    
     Pattern pattern = Pattern
                 .compile("^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@"
                         + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$"); 
  
-        Matcher mather = pattern.matcher(email);
- 
+        Matcher mather = pattern.matcher(correo);
+        
         if (mather.find() == true) {
             System.out.println("El email ingresado es válido.");
         } else {
             System.out.println("El email ingresado es inválido.");
         }
     
-    return true;
+    return correo;
     }
     
 }

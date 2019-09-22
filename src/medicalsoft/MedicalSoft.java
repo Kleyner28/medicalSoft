@@ -22,9 +22,10 @@ public class MedicalSoft {
         System.out.println(primerMedico.getNombres());
         System.out.println(primerMedico.getApellidos());        
         primerMedico.setFecha_nacimiento("28/07/1999");
-        primerMedico.setEmail("kleyner@1.com");
+        Validacion.setCorreo("Kleyner@gmail.com");
         
-        System.out.println("El medico es "+primerMedico.getFullName()+" y su edad es: "+primerMedico.getEdad());
+        System.out.println("El medico es "+primerMedico.getFullName()+" y su edad es: "+primerMedico.getEdad()+"\n"
+                + "su correo es "+Validacion.validarEmail());
     }
     
 }
