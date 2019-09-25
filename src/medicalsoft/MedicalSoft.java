@@ -26,6 +26,11 @@ public class MedicalSoft {
         
         System.out.println("El medico es "+primerMedico.getFullName()+" y su edad es: "+primerMedico.getEdad()+"\n"
                 + "su correo es "+Validacion.validarEmail());
+        Interfaz in1=new Interfaz();
+        in1.Interfaz();
+        in1.Interfaz2();
+        in1.Interfaz3();
+        
     }
     
 }
